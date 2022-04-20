@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+<body>
+    
+    <h1>JOB DETAILS</h1>
+    <form class="block">
+        <table>
+
+            <tr>
+                <td class="description">Job Title:</td>
+                <td><input type="text" required autofocus></td>
+            </tr>
+
+            <tr>
+                <td class="description">Description:</td>
+                <td><textarea required cols="4" maxlength="500"></textarea>Brief Description should have atmost 500
+                    characters</td>
+            </tr>
+
+            <tr>
+                <td class="description">Company Name:</td>
+                <td><input type="text" required></td>
+            </tr>
+
+            <tr>
+                <td class="description">Contact number:</td>
+                <td><input type="tel" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></td>
+            </tr>
+
+            <tr>
+                <td class="description">Contact person:</td>
+                <td><input type="text" required></td>
+            </tr>
+
+            <tr>
+                <td class="description">Email:</td>
+                <td><input type="email" required></td>
+            </tr>
+
+            <tr>
+                <td class="description">Work status:</td>
+                <td>
+                    <input type="radio" value="Full time" name="time" id="ft">
+                    <label for="ft">Fule time</label>
+                    <input type="radio" value="Part time" name="time" id="pt">
+                    <label for="pt">Part time</label>
+                    <input type="radio" value="Per dim" name="time" id="pd">
+                    <label for="pd">Per Dim</label>
+                    <input type="radio" value="Others" name="time" id="oth">
+                    <label for="oth">Others</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="description">Salary:</td>
+                <td>
+                    <input type="number" required min="0">
+                    <select name="currency">
+                        <option value="dollar">US Dollar</option>
+                        <option value="euro">Euro</option>
+                        <option value="amd">AMD</option>
+                        <option value="rub">RUB</option>
+                    </select>
+                    <select name="payment">
+                        <option value="year">Per year</option>
+                        <option value="month">Per month</option>
+                        <option value="week">Per week</option>
+                        <option value="day">Per day</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="description">Experience(Years):</td>
+                <td><input type="number" required min="0"></td>
+            </tr>
+
+
+            <tr>
+                <td class="description">Locations:</td>
+                <td><input type="text" required></td>
+            </tr>
+
+            <tr>
+                <td class="description">Qualifications:</td>
+                <td>
+                    <form>
+                        <select name="time">
+                            <option value="any">Any</option>
+                            <option value="high scool">High Scool</option>
+                            <option value="associate">Associate</option>
+                            <option value="pre bachelors">Pre Bachelors</option>
+                        </select>
+                        <button type="submit">ADD &#8594</button>
+                        <button type="reset">&#8592 Remove</button>
+                        <input type="text" placeholder="Any">
+                    </form>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="description"><button type="submit">Submit</button></td>
+                <td><button type="reset">Reset</button></td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+
+</html>
